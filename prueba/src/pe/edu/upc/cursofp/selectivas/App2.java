@@ -1,9 +1,20 @@
 package pe.edu.upc.cursofp.selectivas;
 
+import java.util.Scanner;
+
 public class App2 {
     public static void main(String[] args) {
-        double resultado=0;
-        resultado = calcularSueldoFinal(2000,2000,"B");
+        double resultado=0, sueldo=0;
+        int ventas = 0;
+        String tipo="";
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Ingrese su sueldo:");
+        sueldo = sc.nextDouble();
+        System.out.print("Ingrese sus ventas:");
+        ventas = sc.nextInt();
+        System.out.print("Ingrese tipo:");
+        tipo = sc.next();
+        resultado = calcularSueldoFinal(sueldo,ventas,tipo);
         System.out.println("Sueldo final: "+ resultado);
     }
     static double calcularSueldoFinal(double sueldo, int ventas, String tipo){
