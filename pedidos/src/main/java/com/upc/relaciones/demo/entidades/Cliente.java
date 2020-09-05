@@ -13,6 +13,7 @@ public class Cliente {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "CODIGO_CLIENTE")
     private Long codigo;
+    @Column(name = "dni", unique = true)
     private String dni;
     private String nombre;
     private String email;
