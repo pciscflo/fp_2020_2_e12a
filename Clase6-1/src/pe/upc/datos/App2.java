@@ -2,7 +2,7 @@ package pe.upc.datos;
 
 public class App2 {
     public static void main(String[] args) {
-        long n=4787;
+        int n=4787;
         System.out.println("Total Digitos:"+ cantidadDigitos(n));
         System.out.println("Cantidad de digitos 7: " + cantidadDigitos(n, 7));
     }
@@ -14,6 +14,7 @@ public class App2 {
             numero /= 10; // numero = numero /10 --> 3445, 344,34, 3, 0
             //System.out.println(numero);
         }
+
         return contadorDigitos;
     }
 
