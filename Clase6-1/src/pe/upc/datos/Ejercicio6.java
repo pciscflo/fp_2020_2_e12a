@@ -44,7 +44,7 @@ public class Ejercicio6 {
         double medicinaAEliminar = medicina * porcentaje / 100;
         double sumaMedicinaAEliminar = 0.0;
         int contdias = 0;
-        double aEliminar = 0.0;
+        double aEliminar =  0.0;
 
         while (medicinaAEliminar > sumaMedicinaAEliminar){
             aEliminar = medicina * 0.20;

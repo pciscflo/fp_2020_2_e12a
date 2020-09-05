@@ -27,6 +27,4 @@ public class App6Sueldos {
     static double calcularSueldoDespuesNAños(String tipoTrabajador, double sueldo, double n){
         return sueldo*n + calcularPorcentajeAumentoNAños(tipoTrabajador, sueldo, n);
     }
-
-
 }
