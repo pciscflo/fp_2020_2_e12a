@@ -4,13 +4,20 @@ import java.util.Arrays;
 
 public class App2 {
     public static void main(String[] args) {
+
         int ventas[] ={29, 4, 7 ,10, 3};
-        String agentes [] = {"Jose", "Carlos", "Lorenzo", "Maria", "Carmen"};
+        String agentes [] = {"Jose", "Carlos", "Lorenzo", "Maria", "Carmen"}; //new String[5]
         System.out.println("Total de Ventas:" + calcularTotalVentas(ventas));
         System.out.println("% de Agentes que superaon la cuota:" + calcularPorcentajeAgentesCuotaOk(ventas) );
         String [] vendeSup = obtenerNombresSuperaronCuota(ventas,agentes);
         System.out.println("Superaron cuota:" + Arrays.toString(vendeSup));
+        System.out.println("Total de comisiones:" + calcularTotalComisiones(ventas));
 
+    }
+    static double calcularTotalComisiones(int ventas[]){
+        double total;
+        total = calcularTotalVentas(ventas)*300;
+        return  total;
     }
     static int calcularTotalVentas(int ventas[]){
         int suma =0;
