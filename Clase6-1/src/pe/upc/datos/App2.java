@@ -1,6 +1,11 @@
 package pe.upc.datos;
 
 public class App2 {
+    /*
+    Dado un número cuantos dígitos posee?
+    Dado un número cuantos dígitos 7 posee?
+
+    */
     public static void main(String[] args) {
         int n=4787;
         System.out.println("Total Digitos:"+ cantidadDigitos(n));

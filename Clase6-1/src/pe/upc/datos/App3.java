@@ -3,6 +3,9 @@ package pe.upc.datos;
 import java.util.Scanner;
 
 public class App3 {
+	/*
+	  Calcular el Factorial del un número n
+	*/
     public static void main(String[] args) {
         int fact;
         fact = factorial(12);
